@@ -455,6 +455,11 @@ vendor/etc/camera/bu24235_dl_program_Joan_LGITAct_ICG1020S_rev5_S_data2.bin
 # Camera - Postprocessing
 vendor/lib/libdepthmapwrapper.so
 
+# DRM - Widevine
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/lib64/libwvhidl.so
+
 # DSP
 vendor/etc/scve/facereco/gModel.dat
 vendor/lib/rfsa/adsp/AlacDecoderModule.so.1
