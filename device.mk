@@ -54,8 +54,7 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libtinycompress \
-    libtinycompress.vendor
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
