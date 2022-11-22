@@ -145,6 +145,9 @@ debug.renderengine.backend=skiaglthreaded
 ro.hardware.vulkan=adreno
 ro.hardware.egl=adreno
 
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
+
 # DPM
 persist.dpm.feature=0
 
