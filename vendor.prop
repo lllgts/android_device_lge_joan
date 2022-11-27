@@ -216,6 +216,7 @@ ril.subscription.types=NV,RUIM
 ro.telephony.default_network=10
 telephony.lteOnCdmaDevice=1
 vendor.rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
+persist.vendor.radio.data_ltd_sys_ind=1
 
 # Radio - LGE
 ro.vendor.lge.build.target_country=COM
