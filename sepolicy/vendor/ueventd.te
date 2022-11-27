@@ -1,1 +1,3 @@
 r_dir_file(ueventd, persist_lg_firmware_file);
+
+allow ueventd persist_lg_data_file:dir { search };

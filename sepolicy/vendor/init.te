@@ -28,6 +28,7 @@ allow init self:process { execmem };
 allow init sysfs:file { setattr };
 allow init sysfs_livedisplay_tuneable:file { open write };
 allow init sysfs_lge_fingerprint:file { open read write };
+allow init sysfs_scsi_devices_0000:file { write };
 
 allow init proc:file { getattr open read };
 

@@ -1,0 +1,8 @@
+get_prop(untrusted_app_29, persist_camera_prop) 
+get_prop(untrusted_app_29, camera_prop) 
+
+allow untrusted_app_29 fuse:file { ioctl };
+allow untrusted_app_29 vendor_file:file { read };
+allow untrusted_app_29 adsprpcd_file:dir { search };
+allow untrusted_app_29 adsprpcd_file:dir { getattr };
+allow untrusted_app_29 vendor_adsprpc_prop:file { read };

@@ -5,3 +5,7 @@ binder_call(hal_camera_default, hal_configstore_default);
 r_dir_file(hal_camera_default, firmware_file);
 allow hal_camera_default diag_device:chr_file { ioctl open read write };
 allow hal_camera_default sysfs_kgsl:file r_file_perms;
+allow hal_camera_default persist_lg_data_file:dir { search };
+
+allow hal_camera_default bootanim_system_prop:file { read };
+allow hal_camera_default build_bootimage_prop:file { read };

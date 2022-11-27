@@ -11,9 +11,9 @@ get_prop({
 
 r_dir_file(untrusted_app_27, sysfs_graphics);
 allow untrusted_app firmware_file:filesystem { getattr };
+allow untrusted_app proc_zoneinfo:file { read };
+allow untrusted_app mnt_sdcard_file:lnk_file { read };
+allow untrusted_app vendor_file:file { read };
+allow untrusted_app shell_test_data_file:dir { search };
 
-allow untrusted_app_27 sysfs:dir { open read search };
-allow untrusted_app_27 sysfs_data:file { open read };
-allow untrusted_app_27 sysfs_leds:dir { search };
-allow untrusted_app_27 sysfs_mpdecision:file { getattr open read };
-allow untrusted_app_27 sysfs_kgsl:file { getattr open read };
+dontaudit untrusted_app proc_vmstat:file { getattr open };

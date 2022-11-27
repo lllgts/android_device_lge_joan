@@ -5,6 +5,7 @@ get_prop(priv_app,{
 
 allow priv_app sysfs:file { getattr };
 allow priv_app proc:file { getattr };
+allow priv_app vendor_file:file { read };
 allow priv_app device:dir { open };
 allow priv_app proc_interrupts:file { open };
 allow priv_app proc_modules:file { getattr open };
