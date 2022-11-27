@@ -153,6 +153,8 @@ ro.hardware.egl=adreno
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # DPM
 persist.dpm.feature=0
