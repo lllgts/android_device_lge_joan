@@ -1,5 +1,8 @@
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Maintaier
+MIKU_MASTER := Sakura
+
+# Inherit some common miku stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
@@ -12,7 +15,7 @@ $(call inherit-product, device/lge/joan/device.mk)
 
 # Device identifiers
 PRODUCT_DEVICE := joan
-PRODUCT_NAME := lineage_joan
+PRODUCT_NAME := miku_joan
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := joan
 PRODUCT_MANUFACTURER := LGE
