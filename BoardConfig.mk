@@ -21,6 +21,7 @@ TARGET_OTA_ASSERT_DEVICE := v30,joan,h930,h932
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h930_defconfig
 TARGET_KERNEL_VERSION := 4.4
+TARGET_FORCE_PREBUILT_KERNEL := true
 
 # inherit from the proprietary version
 -include vendor/lge/joan/BoardConfigVendor.mk
@@ -170,6 +171,7 @@ BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/lge/msm8998
 
 # Lights
