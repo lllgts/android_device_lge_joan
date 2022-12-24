@@ -90,6 +90,7 @@ TARGET_SCREEN_WIDTH := 1440
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.0 \
     android.hardware.bluetooth@1.0.vendor \
     libbt-vendor
