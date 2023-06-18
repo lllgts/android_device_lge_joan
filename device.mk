@@ -167,12 +167,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor \
     LGEPocketMode
 
-# FM packages
-PRODUCT_PACKAGES += \
-	FM2 \
-    libqcomfm_jni \
-    qcom.fmradio
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -380,8 +374,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor \
-    libclang_rt.ubsan_standalone-aarch64-android
+    libqti_vndfwk_detect.vendor
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -447,10 +440,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
